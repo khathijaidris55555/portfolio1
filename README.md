@@ -1000,39 +1000,13 @@
         </div>
         <div class="about-section" id="heroText">
             <h2>About Me</h2>
-            <p id="heroTextt" >
+            <p>
         I am a curious and driven individual with a deep interest in software development, artificial intelligence, and problem-solving. 
         At VIT Chennai, I have honed my skills in programming, teamwork, and leadership. My goal is to contribute to impactful projects 
         that push the boundaries of technology while empowering communities. I also enjoy exploring creative pursuits like writing blogs 
         and mentoring peers.
             </p>
-    <!-- Language Selection -->
-
-            <div style="margin-top: 20px;">
-                <label for="languageSelect" style="font-size: 1rem; font-weight: bold;">Translate to:</label>
-                <select id="languageSelect" style="padding: 10px; font-size: 1rem; border-radius: 5px;">
-                    <option value="en">English</option>
-                    <option value="es">Spanish</option>
-                    <option value="fr">French</option>
-                    <option value="de">German</option>
-                    <option value="hi">Hindi</option>
-                </select>
-                <button id="translateButton" style="padding: 10px 20px; font-size: 1rem; background-color: var(--accent-color); color: white; border: none; border-radius: 5px; cursor: pointer;">
-                    Translate
-                </button>
-                <label for="languageAboutSelect" style="font-size: 1rem; font-weight: bold;">Translate to:</label>
-                <select id="languageAboutSelect" style="padding: 10px; font-size: 1rem; border-radius: 5px;">
-                    <option value="en">English</option>
-                    <option value="es">Spanish</option>
-                    <option value="fr">French</option>
-                    <option value="de">German</option>
-                    <option value="hi">Hindi</option>
-                </select>
-                <button id="translateAboutButton" style="padding: 10px 20px; font-size: 1rem; background-color: var(--accent-color); color: white; border: none; border-radius: 5px; cursor: pointer;">
-                    Translate
-                </button>
-
-            </div>
+        </div>
             <div class="about-details">
                 <div class="about-card">
                     <i class="fas fa-graduation-cap"></i>
@@ -1432,91 +1406,8 @@
             }, 5000);
         });
        
-    const aboutMeTranslations = {
-        en: "I am a curious and driven individual with a deep interest in software development, artificial intelligence, and problem-solving. At VIT Chennai, I have honed my skills in programming, teamwork, and leadership. My goal is to contribute to impactful projects that push the boundaries of technology while empowering communities. I also enjoy exploring creative pursuits like writing blogs and mentoring peers.",
-        es: "Soy una persona curiosa y motivada con un profundo interés en el desarrollo de software, la inteligencia artificial y la resolución de problemas. En VIT Chennai, he perfeccionado mis habilidades en programación, trabajo en equipo y liderazgo. Mi objetivo es contribuir a proyectos impactantes que amplíen los límites de la tecnología mientras empoderan a las comunidades. También disfruto explorar actividades creativas como escribir blogs y asesorar a compañeros.",
-        fr: "Je suis une personne curieuse et motivée avec un profond intérêt pour le développement de logiciels, l'intelligence artificielle et la résolution de problèmes. À VIT Chennai, j'ai perfectionné mes compétences en programmation, travail d'équipe et leadership. Mon objectif est de contribuer à des projets percutants qui repoussent les limites de la technologie tout en autonomisant les communautés. J'aime également explorer des activités créatives comme écrire des blogs et encadrer mes pairs.",
-        de: "Ich bin eine neugierige und zielstrebige Person mit großem Interesse an Softwareentwicklung, künstlicher Intelligenz und Problemlösung. An der VIT Chennai habe ich meine Fähigkeiten in Programmierung, Teamarbeit und Führung weiterentwickelt. Mein Ziel ist es, zu wirkungsvollen Projekten beizutragen, die die Grenzen der Technologie erweitern und gleichzeitig Gemeinschaften stärken. Außerdem erkunde ich gerne kreative Tätigkeiten wie das Schreiben von Blogs und das Mentoring von Kollegen.",
-        hi: "मैं एक जिज्ञासु और प्रेरित व्यक्ति हूं जिसे सॉफ़्टवेयर विकास, कृत्रिम बुद्धिमत्ता और समस्या-समाधान में गहरी रुचि है। वीआईटी चेन्नई में, मैंने प्रोग्रामिंग, टीमवर्क और नेतृत्व में अपनी क्षमताओं को निखारा है। मेरा लक्ष्य प्रभावशाली परियोजनाओं में योगदान देना है जो प्रौद्योगिकी की सीमाओं को आगे बढ़ाते हुए समुदायों को सशक्त बनाती हैं। मुझे ब्लॉग लिखने और सहकर्मियों का मार्गदर्शन करने जैसे रचनात्मक कार्यों का भी आनंद मिलता है।"
-    };
-
-    document.getElementById("translateButton").addEventListener("click", function () {
-        const selectedLanguage = document.getElementById("languageSelect").value;
-        const heroTextt = document.getElementById("heroTextt");
-        
-        // Update text based on selected language
-        if (aboutMeTranslations[selectedLanguage]) {
-            heroTextt.innerText = aboutMeTranslations[selectedLanguage];
-        } else {
-            heroTextt.innerText = aboutMeTranslations["en"]; // Default to English if no translation is found
-        }
-    });
-    const translationss = {
-        en: {
-            heroTitle: "Welcome to My Portfolio",
-            heroText: "Hi, I'm Aiyisha Idris, a CSE student at VIT Chennai passionate about technology and innovation.",
-            aboutMeTitle: "About Me",
-            aboutMeText:
-                "I am a curious and driven individual with a deep interest in software development, artificial intelligence, and problem-solving. At VIT Chennai, I have honed my skills in programming, teamwork, and leadership. My goal is to contribute to impactful projects that push the boundaries of technology while empowering communities. I also enjoy exploring creative pursuits like writing blogs and mentoring peers.",
-            certificatesTitle: "Certificates",
-        },
-        es: {
-            heroTitle: "Bienvenido a Mi Portafolio",
-            heroText: "Hola, soy Aiyisha Idris, una estudiante de CSE en VIT Chennai apasionada por la tecnología y la innovación.",
-            aboutMeTitle: "Sobre Mí",
-            aboutMeText:
-                "Soy una persona curiosa y motivada con un profundo interés en el desarrollo de software, la inteligencia artificial y la resolución de problemas. En VIT Chennai, he perfeccionado mis habilidades en programación, trabajo en equipo y liderazgo. Mi objetivo es contribuir a proyectos impactantes que amplíen los límites de la tecnología mientras empoderan a las comunidades. También disfruto explorar actividades creativas como escribir blogs y asesorar a compañeros.",
-            certificatesTitle: "Certificados",
-        },
-        fr: {
-            heroTitle: "Bienvenue dans Mon Portfolio",
-            heroText: "Bonjour, je suis Aiyisha Idris, une étudiante en CSE à VIT Chennai passionnée par la technologie et l'innovation.",
-            aboutMeTitle: "À Propos de Moi",
-            aboutMeText:
-                "Je suis une personne curieuse et motivée avec un profond intérêt pour le développement de logiciels, l'intelligence artificielle et la résolution de problèmes. À VIT Chennai, j'ai perfectionné mes compétences en programmation, travail d'équipe et leadership. Mon objectif est de contribuer à des projets percutants qui repoussent les limites de la technologie tout en autonomisant les communautés. J'aime également explorer des activités créatives comme écrire des blogs et encadrer mes pairs.",
-            certificatesTitle: "Certificats",
-        },
-        de: {
-            heroTitle: "Willkommen in Meinem Portfolio",
-            heroText:
-                "Hallo, ich bin Aiyisha Idris, eine CSE-Studentin an der VIT Chennai, die sich für Technologie und Innovation begeistert.",
-            aboutMeTitle: "Über Mich",
-            aboutMeText:
-                "Ich bin eine neugierige und zielstrebige Person mit großem Interesse an Softwareentwicklung, künstlicher Intelligenz und Problemlösung. An der VIT Chennai habe ich meine Fähigkeiten in Programmierung, Teamarbeit und Führung weiterentwickelt. Mein Ziel ist es, zu wirkungsvollen Projekten beizutragen, die die Grenzen der Technologie erweitern und gleichzeitig Gemeinschaften stärken. Außerdem erkunde ich gerne kreative Tätigkeiten wie das Schreiben von Blogs und das Mentoring von Kollegen.",
-            certificatesTitle: "Zertifikate",
-        },
-        hi: {
-            heroTitle: "मेरे पोर्टफोलियो में आपका स्वागत है",
-            heroText:
-                "नमस्ते, मैं अयिशा इदरीस हूं, वीआईटी चेन्नई में सीएसई की छात्रा हूं जो प्रौद्योगिकी और नवाचार के प्रति उत्साही है।",
-            aboutMeTitle: "मेरे बारे में",
-            aboutMeText:
-                "मैं एक जिज्ञासु और प्रेरित व्यक्ति हूं जिसे सॉफ़्टवेयर विकास, कृत्रिम बुद्धिमत्ता और समस्या-समाधान में गहरी रुचि है। वीआईटी चेन्नई में, मैंने प्रोग्रामिंग, टीमवर्क और नेतृत्व में अपनी क्षमताओं को निखारा है। मेरा लक्ष्य प्रभावशाली परियोजनाओं में योगदान देना है जो प्रौद्योगिकी की सीमाओं को आगे बढ़ाते हुए समुदायों को सशक्त बनाती हैं। मुझे ब्लॉग लिखने और सहकर्मियों का मार्गदर्शन करने जैसे रचनात्मक कार्यों का भी आनंद मिलता है।",
-            certificatesTitle: "प्रमाण पत्र",
-        },
-    };
-
-    document.getElementById("translateAboutButton").addEventListener("click", function () {
-        const selectedLanguagee = document.getElementById("languageAboutSelect").value;
-
-        // Update Hero Section
-        document.querySelector(".hero h1").innerText = translationss[selectedLanguagee].heroTitle;
-        document.querySelector(".hero p").innerText = translationss[selectedLanguagee].heroText;
-
-        // Update About Me Section
-        document.querySelector("#aboutMeSection h2").innerText = translationss[selectedLanguagee].aboutMeTitle;
-        document.querySelector("#aboutMeSection p").innerText = translationss[selectedLanguagee].aboutMeText;
-
-        // Update Certificates Section
-        document.querySelector(".certificates-section h2").innerText = translationss[selectedLanguagee].certificatesTitle;
-    });
-        
-
-
-        // Initialize EmailJS in a real implementation
-        // (function() {
-        //     emailjs.init("YOUR_USER_ID");
-        // })();
+    
+    
     </script>
 </body>
 </html>
