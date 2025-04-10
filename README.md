@@ -999,7 +999,7 @@
             <img src="C:\Users\lenovo\Desktop\khathija.jpeg" alt="Your Photo">
         </div>
         <div class="about-section" id="heroText">
-            <h2>About Me</h2>
+            
             <p>
         I am a curious and driven individual with a deep interest in software development, artificial intelligence, and problem-solving. 
         At VIT Chennai, I have honed my skills in programming, teamwork, and leadership. My goal is to contribute to impactful projects 
