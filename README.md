@@ -1029,7 +1029,7 @@
                     <p>Travel, Photography, Swimming, Hiking, Reading tech blogs</p>
                 </div>
             </div>
-        </div>
+        
     </section>
 
     <section id="skills" class="skills-section">
